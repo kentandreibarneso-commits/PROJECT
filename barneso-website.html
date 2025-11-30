@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Login/Register to Portfolio</title>
+    <link rel="stylesheet" href="barneso-website3.css">
+    
+</head>
+<body>
+    <!-- Login/Register Container -->
+    <div class="container" id="authContainer">
+        <!-- Login Form -->
+        <div id="loginFormDiv">
+            <h1><i class="fas fa-sign-in-alt"></i> Login</h1>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="loginUsername">Username</label>
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="loginUsername" required>
+                </div>
+                <div class="input-group">
+                    <label for="loginPassword">Password</label>
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit"><i class="fas fa-arrow-right"></i> Login</button>
+            </form>
+            <button class="toggle-btn" onclick="showRegister()"><i class="fas fa-user-plus"></i> Register Instead</button>
+        </div>
+
+        <!-- Register Form -->
+        <div id="registerFormDiv" style="display: none;">
+            <h1><i class="fas fa-user-plus"></i> Register</h1>
+            <form id="registerForm">
+                <div class="input-group">
+                    <label for="regUsername">Username</label>
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="regUsername" required>
+                </div>
+                <div class="input-group">
+                    <label for="regPassword">Password</label>
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="regPassword" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+                <button type="submit"><i class="fas fa-check"></i> Register</button>
+            </form>
+            <button class="toggle-btn" onclick="showLogin()"><i class="fas fa-sign-in-alt"></i> Login Instead</button>
+        </div>
+
+        <div id="message"></div>
+    </div>
+
+    <!-- Portfolio Content (Hidden Initially) -->
+    <div id="portfolio">
+        <div class="upper">
+            <button class="logout-btn" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            <div class="name1">Hello, I'm Kent.</div>
+            <div class="name2">I'm an Information Technology Student.</div>
+        </div>
+
+        <div class="upper2">
+            <div class="name3">About Me</div>
+        </div>
+        <div class="upper3">
+            <img src="gachiakuta.jpg" alt="Kent's Profile Picture" class="profile-img">
+            <div class="about-text">
+                <p>Hi, I'm Kent Andrei H. Barneso, currently a student studying Information Technology at Caraga State University Cabadbaran Campus. I am passionate about learning and developing my skills in Programming and Cybersecurity.
+
+                Though I am still completing my studies, I have gained hands-on experience through projects such as Making a simple website using html and css. These experiences have helped me build a strong foundation in HTML and CSS.
+
+                I am eager to grow and take on new challenges that allow me to apply my knowledge creatively and effectively. Feel free to explore my portfolio to see my work and learning journey so far. I look forward to connecting and collaborating on future opportunities.
+
+                When I’m not studying, I enjoy playing Badminton with my friends and watching anime.
+
+                Thank you for visiting!</p>
+            </div>
+        </div>
+        <div class="personal-info">
+            <div class="contact">Personal Information</div>
+            <p><strong>Name:</strong> Kent Andrei H. Barneso</p>
+            <p><strong>Nickname:</strong> Kent</p>
+            <p><strong>Age:</strong> 19</p>
+            <p><strong>Date Of Birth:</strong> November 11, 2005</p>
+            <p><strong>Place Of Birth:</strong> Butuan City</p>
+            <p><strong>Address:</strong> Block 7 Lot 15 Ira Subdivision, Butuan City, Agusan Del Norte</p>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Mother's name:</strong> Lilian H. Barneso</p>
+            <p><strong>Father's name:</strong> Romel L. Barneso</p>
+            <p><strong>Current School:</strong> Caraga State University Cabadbaran Campus</p>
+            <p><strong>Program:</strong> Information Technology</p>
+            <p><strong>Department:</strong> CEIT</p>
+        </div>
+    </div>
+
+    <script src="barneso-website.js"></script>
+</body>
+</html>
